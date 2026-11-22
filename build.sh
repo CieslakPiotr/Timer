@@ -6,5 +6,5 @@ rm -rf build dist
 javac -d build/classes App.java
 mkdir -p build/jar
 jar --create --file build/jar/Timer.jar --main-class App -C build/classes .
-jpackage --type app-image --name Timer --input build/jar --main-jar Timer.jar --dest dist
+jpackage --type app-image --name Timer --input build/jar --main-jar Timer.jar --icon icon.icns --dest dist
 echo "Built dist/Timer.app"
